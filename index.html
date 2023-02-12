@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+</head>
+<body>
+<div class="bubbles">
+  <span class="one"></span>
+  <span class="two"></span>
+  <span class="three"></span>
+  <span class="four"></span>
+  <span class="five"></span>
+  <span class="six"></span>
+  <span class="seven"></span>
+</div>
+<div class="container">
+    <form action="#" name="forms">
+        <input type="text" name="answer">
+        <div class="buttons">
+            <input type="button" value="AC" onclick="forms.answer.value = ''">
+            <input type="button" value="DEL" onclick="forms.answer.value = forms.answer.value.substr(0, forms.answer.value.length-1)">
+            <input type="button" value="%" onclick="forms.answer.value += '%'">
+            <input type="button" value="/" onclick="forms.answer.value += '/'">
+        </div>
+        <div class="buttons">
+            <input type="button" value="7" onclick="forms.answer.value += '7'">
+            <input type="button" value="8" onclick="forms.answer.value += '8'">
+            <input type="button" value="9" onclick="forms.answer.value += '9'">
+            <input type="button" value="*" onclick="forms.answer.value += '*'">
+        </div>
+        <div class="buttons">
+            <input type="button" value="4" onclick="forms.answer.value += '4'">
+            <input type="button" value="5" onclick="forms.answer.value += '5'">
+            <input type="button" value="6" onclick="forms.answer.value += '6'">
+            <input type="button" value="-" onclick="forms.answer.value += '-'">
+        </div>
+        <div class="buttons">
+            <input type="button" value="1" onclick="forms.answer.value += '1'">
+            <input type="button" value="2" onclick="forms.answer.value += '2'">
+            <input type="button" value="3" onclick="forms.answer.value += '3'">
+            <input type="button" value="+" onclick="forms.answer.value += '+'">
+        </div>
+        <div class="buttons">
+            <input type="button" value="0" onclick="forms.answer.value += '0'">
+            <input type="button" value="00" onclick="forms.answer.value += '00'">
+            <input type="button" value="." onclick="forms.answer.value += '.'">
+            <input type="button" value="=" onclick="forms.answer.value = eval(forms.answer.value)">
+        </div>
+    </form>
+</div>
+</body>
+</html>
